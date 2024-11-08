@@ -2,7 +2,7 @@ name: Deploy Assets to WordPress.org
 on:
   push:
     branches:
-    - main
+    - assets
 jobs:
   trunk:
     name: Deploy Assets
