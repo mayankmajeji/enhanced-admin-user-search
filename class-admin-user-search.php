@@ -4,7 +4,7 @@
  * Plugin Name: Enhanced Admin User Search
  * Plugin URI: https://wordpress.org/plugins/enhanced-admin-user-search/
  * Description: Enhances the WordPress admin user search functionality to allow searching by first name, last name, full name, display name, and user ID.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Mayank Majeji
  * Author URI: https://mayankmajeji.com/
  * License: GPLv2
@@ -30,7 +30,7 @@
  * @version 1.0.0
  */
 
-if ( ! defined('ABSPATH') ) {
+if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
@@ -40,22 +40,25 @@ if ( ! defined('ABSPATH') ) {
  * @package    WP Enhanced Admin User Search.
  * @author     Mayank Majeji.
  */
-if ( ! class_exists('WP_Enhanced_Admin_User_Search') ) {
+if (! class_exists('WP_Enhanced_Admin_User_Search')) {
 
-	class WP_Enhanced_Admin_User_Search {
+	class WP_Enhanced_Admin_User_Search
+	{
 
-		public function __construct() {
+		public function __construct()
+		{
 			// Add action only if in admin area.
-			if ( is_admin() ) {
-				add_action('pre_user_query', array( $this, 'wp_enhanced_admin_user_search' ));
+			if (is_admin()) {
+				add_action('pre_user_query', array($this, 'wp_enhanced_admin_user_search'));
 			}
 		}
 
-		public function wp_enhanced_admin_user_search( $user_search ) {
+		public function wp_enhanced_admin_user_search($user_search)
+		{
 			global $wpdb;
 
 			// Ensure that required objects and functions are available.
-			if ( ! isset($user_search->query_vars['search']) || ! method_exists($user_search, 'query_where') ) {
+			if (! isset($user_search->query_vars['search']) || ! method_exists($user_search, 'query_where')) {
 				return;
 			}
 
@@ -63,7 +66,7 @@ if ( ! class_exists('WP_Enhanced_Admin_User_Search') ) {
 			$search_term = $user_search->query_vars['search'];
 
 			// Check if search term is not empty.
-			if ( ! empty($search_term) ) {
+			if (! empty($search_term)) {
 
 				// Trim and remove the wildcard character.
 				$search_term = trim($search_term, '*');

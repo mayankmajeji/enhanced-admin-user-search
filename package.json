@@ -1,6 +1,6 @@
 {
 	"name": "enhanced-admin-user-search",
-	"version": "1.1.0",
+	"version": "1.0.1",
 	"description": "Enhances the WordPress admin user search functionality to allow searching by first name, last name, full name, display name, and user ID.",
 	"license": "GPL-2.0-or-later",
 	"private": true,
@@ -14,9 +14,9 @@
 		"sass": "^1"
 	},
 	"scripts": {
-		"bump:patch": "bump patch --commit 'Version %s.' enhanced-admin-user-search.php package.json package-lock.json readme.txt",
-		"bump:minor": "bump minor --commit 'Version %s.' enhanced-admin-user-search.php package.json package-lock.json readme.txt",
-		"bump:major": "bump major --commit 'Version %s.' enhanced-admin-user-search.php package.json package-lock.json readme.txt",
+		"bump:patch": "bump patch --commit 'Version %s.' class-admin-user-search.php package.json package-lock.json readme.txt",
+		"bump:minor": "bump minor --commit 'Version %s.' class-admin-user-search.php package.json package-lock.json readme.txt",
+		"bump:major": "bump major --commit 'Version %s.' class-admin-user-search.php package.json package-lock.json readme.txt",
 		"icons": "sharp -i .wordpress-org/icon.svg -o .wordpress-org/icon-128x128.png -f png --palette resize 128 128 && sharp -i .wordpress-org/icon.svg -o .wordpress-org/icon-256x256.png -f png --palette resize 256 256 && sharp -i .wordpress-org/icon-light.svg -o docs/assets/logo.png -f png --palette resize 256 256"
 	},
 	"dependencies": {
