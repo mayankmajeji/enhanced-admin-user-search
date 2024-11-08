@@ -1,6 +1,6 @@
 {
 	"name": "enhanced-admin-user-search",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Enhances the WordPress admin user search functionality to allow searching by first name, last name, full name, display name, and user ID.",
 	"license": "GPL-2.0-or-later",
 	"private": true,

@@ -4,7 +4,7 @@
  * Plugin Name: Enhanced Admin User Search
  * Plugin URI: https://wordpress.org/plugins/enhanced-admin-user-search/
  * Description: Enhances the WordPress admin user search functionality to allow searching by first name, last name, full name, display name, and user ID.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Mayank Majeji
  * Author URI: https://mayankmajeji.com/
  * License: GPLv2
