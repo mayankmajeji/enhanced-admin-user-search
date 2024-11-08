@@ -2,10 +2,10 @@ name: Deploy Assets to WordPress.org
 on:
   push:
     branches:
-    - trunk
+    - deploy
 jobs:
   trunk:
-    name: Push to trunk
+    name: Deploy Assets
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
